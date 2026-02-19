@@ -4,18 +4,14 @@ namespace Server.Models
 {
     public class Board : Entity
     {
-        private static LineCollider TopBorder { get; set; }
-        private static LineCollider BottomBorder { get; set; }
+        private const float MOVE_SPEED = 1.0f;
+        private LineCollider TopBorder { get; set; }
+        private LineCollider BottomBorder { get; set; }
 
-        public Board(Vector2 Position, BoxCollider Collider) : base(Position, Collider)
+        public Board(Vector2 Position, BoxCollider Collider, LineCollider TopBorder, LineCollider BottomBorder) : base(Position, Collider, MOVE_SPEED)
         {
-
-        }
-
-        public Board(Vector2 Position, BoxCollider Collider, LineCollider TopBorder, LineCollider BottomBorder) : base(Position, Collider)
-        {
-            Board.TopBorder = TopBorder ?? new LineCollider(new Vector2(), new Vector2());
-            Board.BottomBorder = BottomBorder;
+            this.TopBorder = TopBorder;
+            this.BottomBorder = BottomBorder;
         }
 
         public override void Move(Vector2 Move)

@@ -7,8 +7,8 @@ namespace Server.Models
         public Guid ID { get; protected set; }
         public ICollider Collider { get; protected set; }
         public Vector2 Position { get; protected set; }
-        public Vector2 MoveSpeed { get; protected set; }
-        public Entity(Vector2 Position, ICollider Collider)
+        public float MoveSpeed { get; protected set; }
+        public Entity(Vector2 Position, ICollider Collider, float MoveSpeed)
         {
             ID = Guid.NewGuid();
             if (Collider != null)
