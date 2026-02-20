@@ -16,6 +16,7 @@ namespace Server.Models
             else
                 throw new Exception("Collider is null");
             this.Position = Position;
+            this.MoveSpeed = MoveSpeed;
         }
 
         public virtual void Move(Vector2 Move)

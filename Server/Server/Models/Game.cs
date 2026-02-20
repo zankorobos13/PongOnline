@@ -22,6 +22,7 @@ namespace Server.Models
         public Game(Guid Player1ID, Guid Player2ID)
         {
             GameID = Guid.NewGuid();
+            Console.WriteLine(GameID);
             InitTime = DateTime.Now;
             RecentTime = InitTime;
             NewTime = InitTime;
@@ -47,6 +48,7 @@ namespace Server.Models
             Board1.Move(Board1Move * Board1.MoveSpeed * DeltaTimeSeconds);
             Board2.Move(Board2Move * Board2.MoveSpeed * DeltaTimeSeconds);
             Ball.Move(Ball.Movement * Ball.MoveSpeed * DeltaTimeSeconds);
+            Console.WriteLine(Ball.MoveSpeed);
             RecentTime = NewTime;
             
         }
