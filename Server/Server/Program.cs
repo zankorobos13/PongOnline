@@ -23,12 +23,15 @@ app.MapGet("/Games/{id}", (Guid id) =>
 {
     Game Game = GamesController.GetGameByID(id);
     Game.Tick(new System.Numerics.Vector2(0,0), new System.Numerics.Vector2(0,0));
-    Console.WriteLine("get");
-    return new List<object>
+    //Console.WriteLine("get");
+    return new Dictionary<string, float>
     {
-        Game.Board1.Position.X.ToString() + " " + Game.Board1.Position.Y,
-        Game.Board2.Position.X.ToString() + " " + Game.Board2.Position.Y,
-        Game.Ball.Position.X.ToString() + " " + Game.Ball.Position.Y,
+        { "Board1_X", Game.Board1.Position.X },
+        { "Board1_Y", Game.Board1.Position.Y },
+        { "Board2_X", Game.Board2.Position.X },
+        { "Board2_Y", Game.Board2.Position.Y },
+        { "Ball_X", Game.Ball.Position.X },
+        { "Ball_Y", Game.Ball.Position.Y }
     };
 }
 

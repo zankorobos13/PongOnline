@@ -4,32 +4,40 @@ namespace Server.Models
 {
     public class Ball : Entity
     {
-        private const float MOVE_SPEED = 3.0f;
-        public Vector2 Movement { get; set;  }
+        private const float MOVE_SPEED = 0.2f;
+        public Vector2 Direction { get; set;  }
 
         public static List<LineCollider> LineColliders = new List<LineCollider>();
 
         public Ball(Vector2 Position, ICollider Collider) : base(Position, Collider, MOVE_SPEED)
         {
             Random rand = new Random();
-            Movement = Vector2.Normalize(new Vector2((float)rand.NextDouble(), (float)rand.NextDouble()));
+            Direction = Vector2.Normalize(new Vector2((float)rand.NextDouble(), (float)rand.NextDouble()));
         }
 
         public override void Move(Vector2 Move)
         {
+            float movementComponent;
+            if (Move.X != 0)
+               movementComponent = Move.X / Direction.X;
+            else
+                movementComponent = Move.Y / Direction.Y;
+
+
             foreach (var LineCollider in LineColliders)
             {
                 if (Collider.CheckCollision(LineCollider))
                 {
-                    Move = Reflect(Move, LineCollider);
-                    while (Collider.CheckCollision(LineCollider)){
-                        base.Move(Move);
+                    Console.WriteLine("collision");
+                    Direction = Reflect(Direction, LineCollider);
+                    while (Collider.CheckCollision(LineCollider))
+                    {
+                        base.Move(Direction * movementComponent);
                     }
                     break;
                 }
             }
-            Movement = Move;
-            base.Move(Move);
+            base.Move(Direction * movementComponent);
         }
 
         private Vector2 Reflect(Vector2 Move, LineCollider LineCollider)

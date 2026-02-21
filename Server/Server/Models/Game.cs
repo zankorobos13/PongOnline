@@ -47,8 +47,9 @@ namespace Server.Models
             float DeltaTimeSeconds = (float)(NewTime - RecentTime).TotalSeconds;
             Board1.Move(Board1Move * Board1.MoveSpeed * DeltaTimeSeconds);
             Board2.Move(Board2Move * Board2.MoveSpeed * DeltaTimeSeconds);
-            Ball.Move(Ball.Movement * Ball.MoveSpeed * DeltaTimeSeconds);
-            Console.WriteLine(Ball.MoveSpeed);
+            Ball.Move(Ball.Direction * Ball.MoveSpeed * DeltaTimeSeconds);
+
+            Console.WriteLine(  Ball.Direction.X.ToString() + " " + Ball.Direction.Y.ToString() + " " + Ball.MoveSpeed.ToString() + " " + DeltaTimeSeconds.ToString() );
             RecentTime = NewTime;
             
         }
