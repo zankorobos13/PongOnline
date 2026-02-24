@@ -1,4 +1,5 @@
 ﻿using System.Numerics;
+using System.Xml.Serialization;
 
 namespace Server.Models
 {
@@ -21,8 +22,14 @@ namespace Server.Models
 
         public virtual void Move(Vector2 Move)
         {
+            //Move = Vector2.Normalize(Move);
             Position += Move;
             Collider?.Move(Move);
+        }
+
+        public virtual void Move(float DeltaTime)
+        {
+
         }
     }
 }

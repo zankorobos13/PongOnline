@@ -400,7 +400,7 @@ MonoBehaviour:
   Board1: {fileID: 1888170710}
   Board2: {fileID: 921204769}
   Ball: {fileID: 2041287399}
-  GET_URL: http://localhost:5175/Games/955127b0-6054-434f-a71d-f029a0c16dd2
+  GET_URL: http://localhost:5175/Games/1964a96c-f5ce-46dc-8b5f-a77fe3139bf1
 --- !u!1 &921204769
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,7 +487,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 10, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -577,8 +577,8 @@ Transform:
   m_GameObject: {fileID: 1888170710}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.95, y: 1.02, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -10, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

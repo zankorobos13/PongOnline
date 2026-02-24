@@ -5,7 +5,7 @@ namespace Server.Controllers
 {
     public static class GamesController
     {
-        private static List<Game> Games = new List<Game>();
+        public static List<Game> Games = new List<Game>();
 
         public static void NewGame(Guid PlayerID1, Guid PlayerID2)
         {

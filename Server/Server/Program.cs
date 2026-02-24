@@ -16,6 +16,7 @@ GamesController.NewGame(p1, p2);
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddHostedService<BackGroundGameTicks>();
 
 var app = builder.Build();
 

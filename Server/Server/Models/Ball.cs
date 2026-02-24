@@ -4,7 +4,7 @@ namespace Server.Models
 {
     public class Ball : Entity
     {
-        private const float MOVE_SPEED = 0.2f;
+        private const float MOVE_SPEED = 1f;
         public Vector2 Direction { get; set;  }
 
         public static List<LineCollider> LineColliders = new List<LineCollider>();
@@ -15,15 +15,8 @@ namespace Server.Models
             Direction = Vector2.Normalize(new Vector2((float)rand.NextDouble(), (float)rand.NextDouble()));
         }
 
-        public override void Move(Vector2 Move)
+        public override void Move(float DeltaTime)
         {
-            float movementComponent;
-            if (Move.X != 0)
-               movementComponent = Move.X / Direction.X;
-            else
-                movementComponent = Move.Y / Direction.Y;
-
-
             foreach (var LineCollider in LineColliders)
             {
                 if (Collider.CheckCollision(LineCollider))
@@ -32,17 +25,18 @@ namespace Server.Models
                     Direction = Reflect(Direction, LineCollider);
                     while (Collider.CheckCollision(LineCollider))
                     {
-                        base.Move(Direction * movementComponent);
+                        base.Move(Direction * MoveSpeed*DeltaTime);
                     }
                     break;
                 }
             }
-            base.Move(Direction * movementComponent);
+            //Position += Direction * MoveSpeed * DeltaTime;  
+            base.Move(Direction * MoveSpeed * DeltaTime);
         }
 
         private Vector2 Reflect(Vector2 Move, LineCollider LineCollider)
         {
-            return new Vector2((float)(Move.X * Math.Cos(2 * LineCollider.Angle) + Move.Y * Math.Sin(2 * LineCollider.Angle)), (float)(Move.X * Math.Sin(2 * LineCollider.Angle) - Move.Y * Math.Cos(2 * LineCollider.Angle)));
+            return Vector2.Normalize(new Vector2((float)(Move.X * Math.Cos(2 * LineCollider.Angle) + Move.Y * Math.Sin(2 * LineCollider.Angle)), (float)(Move.X * Math.Sin(2 * LineCollider.Angle) - Move.Y * Math.Cos(2 * LineCollider.Angle))));
         }
     }
 }
