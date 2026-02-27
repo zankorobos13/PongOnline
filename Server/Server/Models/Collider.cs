@@ -5,28 +5,22 @@ namespace Server.Models
 {
     public interface ICollider
     {
-        public static double DistancePointToLine(Vector2 point, Vector2 lineStart, Vector2 lineEnd)
+        public static double DistancePointToSegment(Vector2 point, Vector2 segmentStart, Vector2 segmentEnd)
         {
-            double x0 = point.X, y0 = point.Y;
-            double x1 = lineStart.X, y1 = lineStart.Y;
-            double x2 = lineEnd.X, y2 = lineEnd.Y;
+            Vector2 segment = segmentEnd - segmentStart;
+            Vector2 toPoint = point - segmentStart;
 
-            if (x1 == x2 && y1 == y2)
-            {
-                double dx = x0 - x1;
-                double dy = y0 - y1;
-                return Math.Sqrt(dx * dx + dy * dy);
-            }
+            // Проекция точки на отрезок
+            float t = Vector2.Dot(toPoint, segment) / segment.LengthSquared();
 
-            double crossProduct = Math.Abs(
-                (x2 - x1) * (y1 - y0) - (x1 - x0) * (y2 - y1)
-            );
+            // Ограничиваем параметр t границами отрезка [0, 1]
+            t = Math.Clamp(t, 0, 1);
 
-            double lineLength = Math.Sqrt(
-                (x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1)
-            );
+            // Ближайшая точка на отрезке
+            Vector2 closestPoint = segmentStart + t * segment;
 
-            return crossProduct / lineLength;
+            // Расстояние от исходной точки до ближайшей точки на отрезке
+            return Vector2.Distance(point, closestPoint);
         }
         public bool CheckCollision(ICollider collider);
         public void Move(Vector2 Move);
@@ -145,7 +139,7 @@ namespace Server.Models
             if (collider is CircleCollider && collider != null)
             {
                 CircleCollider circle_collider = collider as CircleCollider ?? throw new Exception("Circle collider is null");
-                return ICollider.DistancePointToLine(circle_collider.Center, Point1, Point2) <= circle_collider.Radius;
+                return ICollider.DistancePointToSegment(circle_collider.Center, Point1, Point2) <= circle_collider.Radius;
             }
             else if (collider is LineCollider && collider != null)
             {

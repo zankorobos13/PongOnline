@@ -8,8 +8,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 Guid p1 = new Guid();
 Guid p2 = new Guid();
-Console.WriteLine(p1);
-Console.WriteLine(p2);
 GamesController.NewGame(p1, p2);
 
 // Add services to the container.

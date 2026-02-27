@@ -21,7 +21,7 @@ namespace Server.Models
 
         public Game(Guid Player1ID, Guid Player2ID)
         {
-            GameID = Guid.NewGuid();
+            GameID = Guid.Parse("afb4ce76-5b17-4038-83fb-e9993ee6fe95");//Guid.NewGuid();
             Console.WriteLine(GameID);
             InitTime = DateTime.Now;
             RecentTime = InitTime;
@@ -29,15 +29,17 @@ namespace Server.Models
             this.Player1ID = Player1ID;
             this.Player2ID = Player2ID;
 
-            //TopBorder = new LineCollider(new Vector2(-11.5f, 5), new Vector2(11.5f, 5));
-            //BottomBorder = new LineCollider(new Vector2(-11.5f, -5), new Vector2(11.5f, -5));
+            TopBorder = new LineCollider(new Vector2(-11.5f, 5), new Vector2(11.5f, 5));
+            BottomBorder = new LineCollider(new Vector2(-11.5f, -5), new Vector2(11.5f, -5));
+            new LineCollider(new Vector2(-11.5f, -5), new Vector2(-11.5f, 5));
+            new LineCollider(new Vector2(11.5f, -5), new Vector2(11.5f, 5));
 
-            //Board1 = new Board(new Vector2(-10.5f, 0), new BoxCollider(
-            //    new Vector2(-11, 1), new Vector2(-10, 1), new Vector2(-11, -1), new Vector2(-10, -1)
-            //    ), TopBorder, BottomBorder);
-            //Board2 = new Board(new Vector2(10.5f, 0), new BoxCollider(
-            //    new Vector2(10, 1), new Vector2(11, 1), new Vector2(10, -1), new Vector2(11, -1)
-            //    ), TopBorder, BottomBorder);
+            Board1 = new Board(new Vector2(-10.5f, 0), new BoxCollider(
+                new Vector2(-11, 1), new Vector2(-10, 1), new Vector2(-11, -1), new Vector2(-10, -1)
+                ), TopBorder, BottomBorder);
+            Board2 = new Board(new Vector2(10.5f, 0), new BoxCollider(
+                new Vector2(10, 1), new Vector2(11, 1), new Vector2(10, -1), new Vector2(11, -1)
+                ), TopBorder, BottomBorder);
             Ball = new Ball(new Vector2(0, 0), new CircleCollider(new Vector2(0, 0), 0.5f));
         }
 
@@ -45,8 +47,8 @@ namespace Server.Models
         {
             NewTime = DateTime.Now;
             float DeltaTimeSeconds = (float)(NewTime - RecentTime).TotalSeconds;
-            //Board1.Move(Board1Move * Board1.MoveSpeed * DeltaTimeSeconds);
-            //Board2.Move(Board2Move * Board2.MoveSpeed * DeltaTimeSeconds);
+            Board1.Move(Board1Move * Board1.MoveSpeed * DeltaTimeSeconds);
+            Board2.Move(Board2Move * Board2.MoveSpeed * DeltaTimeSeconds);
             Ball.Move(Ball.MoveSpeed * DeltaTimeSeconds);
 
             Console.WriteLine(  Ball.Position.X.ToString() + " " + Ball.Position.Y.ToString() + " " + DeltaTimeSeconds.ToString() );
