@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\ServerSendScript.cs" />
     <Compile Include="Assets\Scripts\ServerReadScript.cs" />
+    <Compile Include="Assets\Scripts\TrackScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

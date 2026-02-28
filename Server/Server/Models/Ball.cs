@@ -4,7 +4,7 @@ namespace Server.Models
 {
     public class Ball : Entity
     {
-        private const float MOVE_SPEED = 1f;
+        private const float MOVE_SPEED = 3f;
         public Vector2 Direction { get; set;  }
 
         public static List<LineCollider> LineColliders = new List<LineCollider>();
