@@ -34,25 +34,39 @@ namespace Server.Models
             new LineCollider(new Vector2(-11.5f, -5), new Vector2(-11.5f, 5));
             new LineCollider(new Vector2(11.5f, -5), new Vector2(11.5f, 5));
 
+            //Board1 = new Board(new Vector2(-10.5f, 0), new BoxCollider(
+            //    new Vector2(-11, 1), new Vector2(-10, 1), new Vector2(-11, -1), new Vector2(-10, -1)
+            //    ), TopBorder, BottomBorder);
             Board1 = new Board(new Vector2(-10.5f, 0), new BoxCollider(
-                new Vector2(-11, 1), new Vector2(-10, 1), new Vector2(-11, -1), new Vector2(-10, -1)
+                new LineCollider(new Vector2(-10.9f, 1), new Vector2(-10.1f, 1)),
+                new LineCollider(new Vector2(-10, 1), new Vector2(-10, -1)),
+                new LineCollider(new Vector2(-10.1f, -1), new Vector2(-10.9f, -1)),
+                new LineCollider(new Vector2(-11, -1), new Vector2(-11, 1))
                 ), TopBorder, BottomBorder);
+            //Board2 = new Board(new Vector2(10.5f, 0), new BoxCollider(
+            //    new Vector2(10, 1), new Vector2(11, 1), new Vector2(10, -1), new Vector2(11, -1)
+            //    ), TopBorder, BottomBorder);
             Board2 = new Board(new Vector2(10.5f, 0), new BoxCollider(
-                new Vector2(10, 1), new Vector2(11, 1), new Vector2(10, -1), new Vector2(11, -1)
+                new LineCollider(new Vector2(10.9f, 1), new Vector2(10.1f, 1)),
+                new LineCollider(new Vector2(10, 1), new Vector2(10, -1)),
+                new LineCollider(new Vector2(10.1f, -1), new Vector2(10.9f, -1)),
+                new LineCollider(new Vector2(11, -1), new Vector2(11, 1))
                 ), TopBorder, BottomBorder);
             Ball = new Ball(new Vector2(0, 0), new CircleCollider(new Vector2(0, 0), 0.5f));
         }
 
-        public void Tick(Vector2 Board1Move, Vector2 Board2Move) // Подумать над BallMove
+        public void Tick() // Подумать над BallMove
         {
             NewTime = DateTime.Now;
             float DeltaTimeSeconds = (float)(NewTime - RecentTime).TotalSeconds;
-            Board1.Move(Board1Move * Board1.MoveSpeed * DeltaTimeSeconds);
-            Board2.Move(Board2Move * Board2.MoveSpeed * DeltaTimeSeconds);
+            
+            Board1.Move(Board1.Direction * Board1.MoveSpeed * DeltaTimeSeconds);
+            Board2.Move(Board2.Direction * Board2.MoveSpeed * DeltaTimeSeconds);
+            
             Ball.Move(Ball.MoveSpeed * DeltaTimeSeconds);
 
-            Console.WriteLine(  Ball.Position.X.ToString() + " " + Ball.Position.Y.ToString() + " " + DeltaTimeSeconds.ToString() );
-            Console.WriteLine(  Ball.Direction.X.ToString()+ " " + Ball.Direction.Y.ToString() + Ball.MoveSpeed);
+            //Console.WriteLine(  Ball.Position.X.ToString() + " " + Ball.Position.Y.ToString() + " " + DeltaTimeSeconds.ToString() );
+            //Console.WriteLine(  Ball.Direction.X.ToString()+ " " + Ball.Direction.Y.ToString() + Ball.MoveSpeed);
             RecentTime = NewTime;
             
         }

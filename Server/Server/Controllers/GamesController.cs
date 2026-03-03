@@ -17,12 +17,13 @@ namespace Server.Controllers
         {
             foreach (var Game in Games)
             {
-                Game.Tick(new Vector2(0f,0f), new Vector2(0f, 0f));
+                Game.Tick();
             } 
         }
 
         public static Game GetGameByID(Guid id)
         {
+            //Console.WriteLine(id);
             Game Game = Games.Where(game => game.GameID == id).FirstOrDefault() ?? throw new Exception("There is no game with this id");
             return Game;
         }

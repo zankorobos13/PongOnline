@@ -56,6 +56,14 @@ namespace Server.Models
             lineColliders[2] = new LineCollider(Right_down, Left_down);
             lineColliders[3] = new LineCollider(Left_down, Left_up);
         }
+
+        public BoxCollider(LineCollider lineCollider1, LineCollider lineCollider2, LineCollider lineCollider3, LineCollider lineCollider4)
+        {
+            lineColliders[0] = lineCollider1;
+            lineColliders[1] = lineCollider2;
+            lineColliders[2] = lineCollider3;
+            lineColliders[3] = lineCollider4;
+        }
         public LineCollider[] GetLineColliders()
         {
             return lineColliders;

@@ -1,4 +1,5 @@
 using System.Collections;
+using System;
 using UnityEditor.Compilation;
 using UnityEngine;
 using UnityEngine.Networking;
@@ -10,7 +11,7 @@ public class ServerReadScript : MonoBehaviour
     public GameObject Ball;
     public string GET_URL;
 
-    [System.Serializable]
+    [Serializable]
     private struct CoordDataStruct
     {
         public float Board1_X;
@@ -41,6 +42,6 @@ public class ServerReadScript : MonoBehaviour
         Board1.transform.position = new Vector2(coordData.Board1_X, coordData.Board1_Y);
         Board2.transform.position = new Vector2(coordData.Board2_X, coordData.Board2_Y);
         Ball.transform.position = new Vector2(coordData.Ball_X, coordData.Ball_Y);
-        Debug.Log(request.downloadHandler.text);
+        //Debug.Log(request.downloadHandler.text);
     }
 }

@@ -38,7 +38,7 @@ namespace Server.Models
             {
                 Console.WriteLine("collision");
                 Direction = Reflect(Direction); // Временно работает только для 90 градусов
-                while (Collider.CheckCollision(CollidedLineCollliderList[0]))
+                while (Collider.CheckCollision(CollidedLineCollliderList[0]) || Collider.CheckCollision(CollidedLineCollliderList[1]))
                 {
                     base.Move(Direction * MoveSpeed * DeltaTime);
                 }
