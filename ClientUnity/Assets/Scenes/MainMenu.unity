@@ -151,6 +151,7 @@ RectTransform:
   - {fileID: 24208147}
   - {fileID: 1719432491}
   - {fileID: 1273160453}
+  - {fileID: 770120449}
   m_Father: {fileID: 15795966}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -173,7 +174,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &15795966
 RectTransform:
   m_ObjectHideFlags: 0
@@ -188,7 +189,6 @@ RectTransform:
   m_Children:
   - {fileID: 323821144}
   - {fileID: 14082845}
-  - {fileID: 770120449}
   m_Father: {fileID: 1186076216}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -278,7 +278,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 24208149}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1867203187}
+        m_TargetAssemblyTypeName: MenuControllerScript, Assembly-CSharp
+        m_MethodName: CloseLoginWindow
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &24208149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -451,7 +463,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 118791791}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1867203187}
+        m_TargetAssemblyTypeName: MenuControllerScript, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &118791791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1928,7 +1952,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 694230228}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1867203187}
+        m_TargetAssemblyTypeName: MenuControllerScript, Assembly-CSharp
+        m_MethodName: OpenLoginWindow
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &694230228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2473,7 +2509,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 15795966}
+  m_Father: {fileID: 14082845}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2523,7 +2559,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 770120451}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1867203187}
+        m_TargetAssemblyTypeName: MenuControllerScript, Assembly-CSharp
+        m_MethodName: CloseLoginWindow
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &770120451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3010,7 +3058,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1008350621}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1867203187}
+        m_TargetAssemblyTypeName: MenuControllerScript, Assembly-CSharp
+        m_MethodName: CloseRegisterWindow
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1008350621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3268,7 +3328,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1128681924}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1867203187}
+        m_TargetAssemblyTypeName: MenuControllerScript, Assembly-CSharp
+        m_MethodName: OpenRegisterWindow
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1128681924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3526,7 +3598,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1174302225}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1867203187}
+        m_TargetAssemblyTypeName: MenuControllerScript, Assembly-CSharp
+        m_MethodName: Register
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1174302225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3759,7 +3843,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1237326542
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4599,7 +4683,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1658814595}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1867203187}
+        m_TargetAssemblyTypeName: MenuControllerScript, Assembly-CSharp
+        m_MethodName: Exit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1658814595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4857,7 +4953,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1712499305}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1867203187}
+        m_TargetAssemblyTypeName: MenuControllerScript, Assembly-CSharp
+        m_MethodName: CloseRegisterWindow
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1712499305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5432,7 +5540,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1817113312}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1867203187}
+        m_TargetAssemblyTypeName: MenuControllerScript, Assembly-CSharp
+        m_MethodName: Login
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1817113312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5471,6 +5591,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1817113309}
   m_CullTransparentMesh: 1
+--- !u!1 &1867203186
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1867203188}
+  - component: {fileID: 1867203187}
+  m_Layer: 0
+  m_Name: MenuController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1867203187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867203186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09cea49cdcad99f4b8b8f7ff08dc93b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MenuControllerScript
+  LoginButtons: {fileID: 15795965}
+  RegisterButtons: {fileID: 1237326541}
+--- !u!4 &1867203188
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867203186}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 581.49396, y: 298.9564, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1880599201
 GameObject:
   m_ObjectHideFlags: 0
@@ -5803,3 +5969,4 @@ SceneRoots:
   - {fileID: 1804578910}
   - {fileID: 1186076216}
   - {fileID: 2087315600}
+  - {fileID: 1867203188}
