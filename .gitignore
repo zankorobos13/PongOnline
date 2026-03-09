@@ -1,1 +1,134 @@
+# ============================================
+# UNITY - Сгенерированные папки (ОБЯЗАТЕЛЬНО)
+# ============================================
+
+# Library - кэш импортированных ассетов (здесь ваш artifactDB)
 ClientUnity/[Ll]ibrary/
+
+# Temp - временные файлы
+ClientUnity/[Tt]emp/
+
+# Logs - логи Unity
+ClientUnity/[Ll]ogs/
+
+# MemoryCaptures - дампы памяти
+ClientUnity/[Mm]emoryCaptures/
+
+# UserSettings - настройки редактора (окна, вкладки)
+ClientUnity/[Uu]ser[Ss]ettings/
+
+# ============================================
+# СБОРКИ (Builds) - готовые билды проекта
+# ============================================
+
+ClientUnity/[Bb]uild/
+ClientUnity/[Bb]uilds/
+ClientUnity/**/[Bb]uild/
+ClientUnity/**/[Bb]uilds/
+
+# ============================================
+# ПЛАГИНЫ И ЗАВИСИМОСТИ (если есть)
+# ============================================
+
+# Папка с плагинами (если не хотите хранить бинарники)
+# ClientUnity/Assets/Plugins/
+# ClientUnity/Assets/Plugins/Android/
+# ClientUnity/Assets/Plugins/iOS/
+
+# ============================================
+# ФАЙЛЫ ПРОЕКТОВ IDE
+# ============================================
+
+# Visual Studio
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.opendb
+*.VC.db
+
+# Visual Studio Code
+.vscode/
+.vscode/**
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# JetBrains Rider
+.idea/
+.idea/**
+*.sln.iml
+
+# ============================================
+# СИСТЕМНЫЕ ФАЙЛЫ
+# ============================================
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ============================================
+# АРХИВЫ И ВРЕМЕННЫЕ ФАЙЛЫ
+# ============================================
+
+*.zip
+*.7z
+*.rar
+*.gz
+*.tar
+*.tgz
+*.log
+*.tmp
+*.temp
+*.bak
+*.old
+*.orig
+
+# ============================================
+# ФАЙЛЫ АССЕТОВ (раскомментируйте если нужно)
+# ============================================
+
+# Бэкапы ассетов
+*/*.backup
+*/*.backupmeta
+
+# Превьюшки ассетов
+*/*.preview
+*/*.previewmeta
+
+# ============================================
+# ВАЖНОЕ ИСКЛЮЧЕНИЕ - сохраняем пустые папки
+# ============================================
+
+# Сохраняем структуру папок (если нужно)
+!ClientUnity/**/.gitkeep
