@@ -6,6 +6,10 @@ using Server.Models;
 using System.Data;
 using System.Numerics;
 using System.Xml.Linq;
+using MySqlConnector;
+
+
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,7 +28,18 @@ builder.Services.ConfigureHttpJsonOptions(options =>
     options.SerializerOptions.PropertyNameCaseInsensitive = true;
 });
 
+builder.Services.AddTransient<MySqlConnection>(sp =>
+    new MySqlConnection("Server=localhost;Port=3306;Database=pongonline;User=root;Password=root;")
+);
+builder.Services.AddTransient<UserService>();
+
 var app = builder.Build();
+
+app.MapGet("/users", async (UserService service) =>
+{
+    var users = await service.GetUsers();
+    return Results.Ok(users);
+});
 
 app.MapGet("/Games/{id}", (Guid id) =>
 {

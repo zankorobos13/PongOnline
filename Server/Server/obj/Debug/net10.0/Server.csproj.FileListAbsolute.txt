@@ -33,3 +33,4 @@ C:\Users\s0rok\Desktop\PongOnline\Server\Server\obj\Debug\net10.0\refint\Server.
 C:\Users\s0rok\Desktop\PongOnline\Server\Server\obj\Debug\net10.0\Server.pdb
 C:\Users\s0rok\Desktop\PongOnline\Server\Server\obj\Debug\net10.0\Server.genruntimeconfig.cache
 C:\Users\s0rok\Desktop\PongOnline\Server\Server\obj\Debug\net10.0\ref\Server.dll
+C:\Users\s0rok\Desktop\PongOnline\Server\Server\bin\Debug\net10.0\MySqlConnector.dll

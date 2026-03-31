@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\s0rok\\Desktop\\PongOnline\\Server\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|c:\\users\\s0rok\\desktop\\pongonline\\server\\server\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|solutionrelative:server\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|c:\\users\\s0rok\\desktop\\pongonline\\server\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|c:\\users\\s0rok\\desktop\\pongonline\\server\\server\\models\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|solutionrelative:server\\models\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|c:\\users\\s0rok\\desktop\\pongonline\\server\\server\\models\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|solutionrelative:server\\models\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|c:\\users\\s0rok\\desktop\\pongonline\\server\\server\\models\\collider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|solutionrelative:server\\models\\collider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|c:\\users\\s0rok\\desktop\\pongonline\\server\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|c:\\users\\s0rok\\desktop\\pongonline\\server\\server\\controllers\\gamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|solutionrelative:server\\controllers\\gamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|c:\\users\\s0rok\\desktop\\pongonline\\server\\server\\controllers\\backgroundgameticks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|solutionrelative:server\\controllers\\backgroundgameticks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|c:\\users\\s0rok\\desktop\\pongonline\\server\\server\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|solutionrelative:server\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|c:\\users\\s0rok\\desktop\\pongonline\\server\\server\\models\\collider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|solutionrelative:server\\models\\collider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|c:\\users\\s0rok\\desktop\\pongonline\\server\\server\\models\\postgamedatastruct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|c:\\users\\s0rok\\desktop\\pongonline\\server\\server\\models\\ball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|solutionrelative:server\\models\\ball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|c:\\users\\s0rok\\desktop\\pongonline\\server\\server\\controllers\\backgroundgameticks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|solutionrelative:server\\controllers\\backgroundgameticks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,24 +50,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PostGameDataStruct.cs",
-              "DocumentMoniker": "C:\\Users\\s0rok\\Desktop\\PongOnline\\Server\\Server\\Models\\PostGameDataStruct.cs",
-              "RelativeDocumentMoniker": "Server\\Models\\PostGameDataStruct.cs",
-              "ToolTip": "C:\\Users\\s0rok\\Desktop\\PongOnline\\Server\\Server\\Models\\PostGameDataStruct.cs",
-              "RelativeToolTip": "Server\\Models\\PostGameDataStruct.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\s0rok\\Desktop\\PongOnline\\Server\\Server\\Models\\UserService.cs",
+              "RelativeDocumentMoniker": "Server\\Models\\UserService.cs",
+              "ToolTip": "C:\\Users\\s0rok\\Desktop\\PongOnline\\Server\\Server\\Models\\UserService.cs",
+              "RelativeToolTip": "Server\\Models\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-03T20:19:51.184Z",
+              "WhenOpened": "2026-03-31T11:51:18.675Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Board.cs",
               "DocumentMoniker": "C:\\Users\\s0rok\\Desktop\\PongOnline\\Server\\Server\\Models\\Board.cs",
               "RelativeDocumentMoniker": "Server\\Models\\Board.cs",
@@ -76,33 +80,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "GamesController.cs",
               "DocumentMoniker": "C:\\Users\\s0rok\\Desktop\\PongOnline\\Server\\Server\\Controllers\\GamesController.cs",
               "RelativeDocumentMoniker": "Server\\Controllers\\GamesController.cs",
               "ToolTip": "C:\\Users\\s0rok\\Desktop\\PongOnline\\Server\\Server\\Controllers\\GamesController.cs",
               "RelativeToolTip": "Server\\Controllers\\GamesController.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAiwBkAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-20T12:28:05.569Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Game.cs",
               "DocumentMoniker": "C:\\Users\\s0rok\\Desktop\\PongOnline\\Server\\Server\\Models\\Game.cs",
               "RelativeDocumentMoniker": "Server\\Models\\Game.cs",
               "ToolTip": "C:\\Users\\s0rok\\Desktop\\PongOnline\\Server\\Server\\Models\\Game.cs",
               "RelativeToolTip": "Server\\Models\\Game.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAgwDQAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwDMAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-17T09:33:12.451Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-17T09:33:12.451Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Ball.cs",
               "DocumentMoniker": "C:\\Users\\s0rok\\Desktop\\PongOnline\\Server\\Server\\Models\\Ball.cs",
               "RelativeDocumentMoniker": "Server\\Models\\Ball.cs",
@@ -110,12 +113,11 @@
               "RelativeToolTip": "Server\\Models\\Ball.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAgwCgAAACDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T21:59:12.498Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-16T21:59:12.498Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Entity.cs",
               "DocumentMoniker": "C:\\Users\\s0rok\\Desktop\\PongOnline\\Server\\Server\\Models\\Entity.cs",
               "RelativeDocumentMoniker": "Server\\Models\\Entity.cs",
@@ -123,25 +125,24 @@
               "RelativeToolTip": "Server\\Models\\Entity.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAA3wBgAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T20:26:36.864Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-16T20:26:36.864Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\s0rok\\Desktop\\PongOnline\\Server\\Server\\Program.cs",
               "RelativeDocumentMoniker": "Server\\Program.cs",
               "ToolTip": "C:\\Users\\s0rok\\Desktop\\PongOnline\\Server\\Server\\Program.cs",
               "RelativeToolTip": "Server\\Program.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAAADMAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACkAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-16T17:23:51.45Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Collider.cs",
               "DocumentMoniker": "C:\\Users\\s0rok\\Desktop\\PongOnline\\Server\\Server\\Models\\Collider.cs",
               "RelativeDocumentMoniker": "Server\\Models\\Collider.cs",
@@ -149,12 +150,11 @@
               "RelativeToolTip": "Server\\Models\\Collider.cs",
               "ViewState": "AgIAACkAAAAAAAAAAAAkwEAAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-27T09:30:25.608Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-27T09:30:25.608Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "BackGroundGameTicks.cs",
               "DocumentMoniker": "C:\\Users\\s0rok\\Desktop\\PongOnline\\Server\\Server\\Controllers\\BackGroundGameTicks.cs",
               "RelativeDocumentMoniker": "Server\\Controllers\\BackGroundGameTicks.cs",
@@ -164,6 +164,18 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-24T11:01:17.149Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PostGameDataStruct.cs",
+              "DocumentMoniker": "C:\\Users\\s0rok\\Desktop\\PongOnline\\Server\\Server\\Models\\PostGameDataStruct.cs",
+              "RelativeDocumentMoniker": "Server\\Models\\PostGameDataStruct.cs",
+              "ToolTip": "C:\\Users\\s0rok\\Desktop\\PongOnline\\Server\\Server\\Models\\PostGameDataStruct.cs",
+              "RelativeToolTip": "Server\\Models\\PostGameDataStruct.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-03T20:19:51.184Z"
             }
           ]
         }
